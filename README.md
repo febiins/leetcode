@@ -1,1 +1,1 @@
-Contains solved problems in leetcode an neetcode
+Contains solved problems in leetcode and neetcode
