@@ -1,16 +1,8 @@
 class Solution:
     def countBits(self, n: int) -> List[int]:
-        l=[]
+        l=[0]*(n+1)
 
-        for i in range(n+1):
-            num=i
-            count=0
-
-            while num>0:
-                rem=num%2
-
-                if rem==1:
-                    count+=1
-                num=num//2
-            l.append(count)
-        return l            
+        for i  in range(0,n+1):
+            l[i]=l[i>>1]+(i&1)
+        return l    
+            
